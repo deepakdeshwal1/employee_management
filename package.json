@@ -1,0 +1,32 @@
+{
+  "name": "dockert",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./bin/www.js"
+  },
+  "imports": {
+    "#controllers/*": "./http/controllers/v1/*",
+    "#models/*": "./models/*",
+    "#helpers/*": "./http/helpers/*",
+    "#requests/*": "./http/Requests/*",
+    "#utils/*": "./http/utils/*",
+    "#middlewares/*": "./http/middlewares/*"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.4.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-jwt": "^8.5.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^8.8.4",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
+    "validator": "^13.12.0"
+  }
+}
