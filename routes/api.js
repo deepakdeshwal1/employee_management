@@ -1,8 +1,8 @@
 import express from 'express'; 
-import authRouter from "./auth.js";
+import employeeRouter from "./employees.js";
 
 var app = express();
 
-app.use("/auth/", authRouter);
+app.use("/employees/", employeeRouter);
 
 export default app;
